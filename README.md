@@ -24,7 +24,7 @@ Available at
 
 ## Create a custom project
 
-**NOTE**: *You can call your geonode project whatever you like following the naming conventions for python packages (generally lower case with underscores (``_``). In the examples below, replace ``{{ project_name }}`` with whatever you would like to name your project.*
+**NOTE**: *You can call your geonode project whatever you like following the naming conventions for python packages (generally lower case with underscores (``_``). In the examples below, replace ``{{project_name}}`` with whatever you would like to name your project.*
 
 ### Using a Python virtual environment
 
@@ -39,12 +39,12 @@ To setup your project using a local python virtual environment, follow these ins
     ```bash
     git clone https://github.com/GeoNode/geonode-project.git -b <your_branch>
     source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-    mkvirtualenv --python=/usr/bin/python3 {{ project_name }}
+    mkvirtualenv --python=/usr/bin/python3 {{project_name}}
     pip install Django==2.2.12
 
-    django-admin startproject --template=./geonode-project -e py,sh,md,rst,json,yml,ini,env,sample,properties -n monitoring-cron -n Dockerfile {{ project_name }}
+    django-admin startproject --template=./geonode-project -e py,sh,md,rst,json,yml,ini,env,sample,properties -n monitoring-cron -n Dockerfile {{project_name}}
 
-    cd {{ project_name }}
+    cd {{project_name}}
     ```
 
 2. Setup the Python Dependencies
@@ -89,12 +89,12 @@ You need Docker 1.12 or higher, get the latest stable official release for your 
     ```bash
     git clone https://github.com/GeoNode/geonode-project.git -b <your_branch>
     source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-    mkvirtualenv --python=/usr/bin/python3 {{ project_name }}
+    mkvirtualenv --python=/usr/bin/python3 {{project_name}}
     pip install Django==2.2.15
 
-    django-admin startproject --template=./geonode-project -e py,sh,md,rst,json,yml,ini,env,sample,properties -n monitoring-cron -n Dockerfile {{ project_name }}
+    django-admin startproject --template=./geonode-project -e py,sh,md,rst,json,yml,ini,env,sample,properties -n monitoring-cron -n Dockerfile {{project_name}}
 
-    cd {{ project_name }}
+    cd {{project_name}}
     ```
 
 2. Run `docker-compose` to start it up (get a cup of coffee or tea while you wait)
